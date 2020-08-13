@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+label.logo {
+  color: #009900;
+  font-size: 20px;
+
+  margin-top: 5px;
+  font-weight: bold;
+}
+label img {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+nav ul {
+  float: right;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+nav ul li {
+  display: inline-block;
+
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 11px;
+  border-radius: 15px;
+
+
+
+}
+a.active, a:hover {
+  background: #009900;
+  border: 2px solid #00e600;
+  transition: 0.5s;
+}
+.home-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home {
+  margin: 6% auto;
+  text-align: center;
+  margin-top: 15%;
+}
+.home h2 {
+  color: white;
+  font-size: 50px;
+}
+.home p {
+  padding-top: 15px;
+  color: white;
+}
+.about-container {
+  height: 800px;
+  width: 100%;
+  background-image: url(about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about {
+  text-align: center;
+  color: white;
+
+}
+.about h1 {
+  padding-top: 50px;
+  font-size: 40px;
+}
+.top-row {
+  margin-top: 50px;
+  margin: 6% auto;
+  width: 70%;
+  height: 200px;
+
+  display: flex;
+}
+.left, .right {
+  float: left;
+  width: 80%;
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 100%;
+  background-color: #e6e6e6;
+  box-shadow: 5px 8px 5px 10px #8c8c8c;
+  color: black;
+}
+.left:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.right:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.left h2 {
+  padding-top: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.right h2 {
+  padding-top: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.left p {
+  padding: 10px;
+  color: #8c8c8c;
+  text-align: left;
+}
+.right p {
+  padding: 10px;
+  color: #8c8c8c;
+  text-align: left;
+}
+.bottom-row {
+  margin-top: 50px;
+  margin: 6% auto;
+  width: 70%;
+  height: 200px;
+
+  display: flex;
+}
+.contact-container {
+  height: 750px;
+  width: 100%;
+  background-image: url(contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contact {
+  margin-right: 50px;
+  padding: 100px;
+
+}
+.form-div {
+
+  text-align: center;
+  height: 500px;
+  max-width: 450px;
+  background-color: #ccffcc;
+  float: right;
+  border: 3px solid #006600;
+  border-radius: 10px;
+  box-shadow: 5px 8px 3px 3px #004d00;
+  cursor: pointer;
+
+}
+.form-div h1 {
+  padding: 10px;
+  color: #009900;
+
+}
+.form-div h3 {
+  padding: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  outline: 0;
+  border: 0;
+  border-radius: 3px;
+}
+button {
+  width: 70%;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  background-color: #008000;
+}
+button:hover {
+  transform: scale(1.05);
+}
+.form-div:hover {
+  transform: scale(1.02);
+
+}
+.footer {
+  margin-top: 480px;
+  margin-left: 42%;
+}
+
+.footer i {
+  color: #008000;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    margin-right: 20px;
+  }
+  nav ul li {
+    margin: 0 5px;
+  }
+  nav ul li a {
+    font-size: 10px;
+    padding: 5px 10px;
+
+  }
+  label.logo {
+    font-size: 15px;
+  }
+  .home h2 {
+    font-size: 25px;
+  }
+  .about h1 {
+    font-size: 20px;
+  }
+  .top-row {
+    flex-direction: column;
+    width: 85%;
+    margin-right: 50px;
+  }
+  .bottom-row {
+    display: none;
+
+  }
+  .right {
+    margin-top: 40px;
+  }
+  .left, .right {
+    width: 100%;
+    padding-right: 50px;
+  }
+  .form-div {
+    float: none;
+  }
+  .contact {
+    padding: 20px;
+  }
+  .footer {
+    display: none;
+  }
+}
